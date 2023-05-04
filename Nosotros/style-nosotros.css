@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FFE7CC;
+}
+
+.imgnav {
+  width: 100px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.nav-link {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link:after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+h2{
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white !important;
+}
+
+h3{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    display: grid;
+    grid-template-columns: auto auto 24rem  ;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 3rem;
+    height: max-content;
+}
+
+.fondoo {
+  background-image: url(../Img-Home/fondo.png
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 2rem;
+    background: rgb(128, 128, 128, 0.7);
+    border: 1px solid black
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 3rem;
+    background:rgb(128, 128, 128, 0.7);
+    border: 1px solid black
+}
+
+.ofer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    gap: 3rem;
+    background: rgb(128, 128, 128, 0.7);
+    border: 1px solid black
+}
+
+
+/*--- --Mediaqueries-- ----*/
+@media (max-width:768px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/*----footer--*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+/* ------ -----redes----- ---*/
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1rem;
+  }
+  
+  .up {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+  }
+  
+  .down {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+  }
+  
+  .card1 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 90px 5px 5px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+	margin-top: 1.5em;
+	margin-left: 1.2em;
+	fill: #cc39a4;
+  }
+  
+  .card2 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 90px 5px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+	margin-top: 1.5em;
+	margin-left: -.9em;
+	fill: #03A9F4;
+  }
+  
+  .card3 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 5px 5px 90px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .github {
+	margin-top: -.6em;
+	margin-left: 1.2em;
+  }
+  
+  .card4 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 5px 90px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .facebook {
+	margin-top: -.10em;
+	margin-left: -0.5em;
+	fill: blue;
+  }
+  
+  .card1:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+	fill: white;
+  }
+  
+  .card2:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+	fill: white;
+  }
+  
+  .card3:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: black;
+  }
+  
+  .card3:hover .github {
+	fill: white;
+  }
+  
+  .card4:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #1d37c9;
+  }
+  
+  .card4:hover .facebook {
+	fill: white;
+  }
